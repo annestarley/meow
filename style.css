@@ -3,7 +3,8 @@
 }
 
 html {
-  background-color: #ff5b5e;
+  /* background-color: #ff5b5e; */
+  background-image: url(paw-background.png);
 }
 
 .main {
@@ -38,9 +39,9 @@ button:hover {
   color: #ff5b5e;
   box-shadow: 5px 10px #C24547;
 }
-button:active {
-  background: #ff7676;
-  color: white;
+
+button:focus {
+  outline: 0;
   box-shadow: 2px 4px #C24547;
 }
 
