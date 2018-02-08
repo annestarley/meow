@@ -20,6 +20,8 @@
     <form>
       <div class="form-row">
         <h2>Create a new profile</h2>
+
+        <!-- CAT INFO -->
         <h3><span id='icon'><i class="fa fa-paw fa-1x white" aria-hidden="true"></i></span> Cat info <span id='icon'><i class="fa fa-paw fa-1.75x white" aria-hidden="true"></i></span></h3>
       </div>
 
@@ -63,6 +65,12 @@
       </div>
 
       <div class="row">
+        <div class="col-md-12">
+          <h5>Click on the cat box to upload an image of your cat.</h5>
+        </div>
+      </div>
+
+      <div class="row">
         <div class="col-xs-3">
           <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
         </div>
@@ -77,35 +85,117 @@
         </div>
       </div>
 
+
+      <!-- HUMAN INFO -->
       <div class="form-row">
         <h3><span id='icon'><i class="fa fa-hand-paper fa-1x white" aria-hidden="true"></i></span> Person info <span id='icon'><i class="fa fa-hand-paper fa-1.75x white" aria-hidden="true"></i></span></h3>
       </div>
 
-
-      <!-- <div class="form-group">
-        <label for="exampleFormControlInput1">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="PersonName">Name: </label>
+          <input class="form-control" type="text" placeholder="Enter your own name (first name only)...">
+        </div>
       </div>
-      <div class="form-group">
-        <label for="exampleFormControlSelect1">Example select</label>
-        <select class="form-control" id="exampleFormControlSelect1">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-      </div> -->
-      <!-- <div class="form-group">
-        <label for="exampleFormControlSelect2">Example multiple select</label>
-        <select multiple class="form-control" id="exampleFormControlSelect2">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-      </div> -->
+
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="exampleFormControlInput1">Email address: </label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form group col-md-6">
+          <input type="radio" name="email" value="allEmail">
+          <label class="custom-control-label" for="email">Show email to all meow users.</label>
+        </div>
+        <div class="form group col-md-6">
+          <input type="radio" name="email" value="matchEmail">
+          <label class="custom-control-label" for="email">Only show email to meow matches.</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputCity">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <div class="form-group col-md-4">
+          <label for="inputState">State</label>
+          <select id="inputState" class="form-control">
+            <option selected>Choose...</option>
+            <option>AL</option>
+            <option>AK</option>
+            <option>AZ</option>
+            <option>AR</option>
+            <option>CA</option>
+            <option>CO</option>
+            <option>CT</option>
+            <option>DE</option>
+            <option>FL</option>
+            <option>FA</option>
+            <option>HI</option>
+            <option>ID</option>
+            <option>IL</option>
+            <option>IN</option>
+            <option>IA</option>
+            <option>KS</option>
+            <option>KY</option>
+            <option>LA</option>
+            <option>ME</option>
+            <option>MD</option>
+            <option>MA</option>
+            <option>MI</option>
+            <option>MN</option>
+            <option>MS</option>
+            <option>MO</option>
+            <option>MT</option>
+            <option>NE</option>
+            <option>NV</option>
+            <option>NH</option>
+            <option>NJ</option>
+            <option>NM</option>
+            <option>NY</option>
+            <option>NC</option>
+            <option>ND</option>
+            <option>OH</option>
+            <option>OK</option>
+            <option>OR</option>
+            <option>PA</option>
+            <option>RI</option>
+            <option>SC</option>
+            <option>SD</option>
+            <option>TN</option>
+            <option>TX</option>
+            <option>UT</option>
+            <option>VT</option>
+            <option>VA</option>
+            <option>WA</option>
+            <option>WV</option>
+            <option>WI</option>
+            <option>WY</option>
+          </select>
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputZip">Zip</label>
+          <input type="text" class="form-control" id="inputZip">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h5>Click on the person box to upload an image of the cat owner (optional).</h5>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-3">
+          <img class="img-responsive" src="./images/simpsons-profile.jpg" height=200 alt="Human default pic" />
+        </div>
+      </div>
+
+
     </form>
   </div>
 
