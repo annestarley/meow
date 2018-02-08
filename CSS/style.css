@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* background-color: #ff5b5e; */
+  background-image: url(../images/paw-background.png);
+}
+
+.main {
+  margin: auto;
+}
+
+.form {
+  margin-right: 10%;
+  margin-left:10%;
+  margin-top: 5%;
+  width: 80%;
+  background: #FFDAE3;
+}
+
+h1 {
+  color: white;
+  font-size: 8em;
+  font-family: 'Gochi Hand', cursive;
+  text-align: center;
+  margin-top: 30%;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+#m:hover, #e:hover, #o:hover, #w:hover, #icon:hover {
+  color: #ff7676;
+}
+
+button {
+  margin: auto;
+  display: block;
+  color: white;
+  background: #ff5b5e;
+  border: 2px solid white;
+  border-radius: 20%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10%;
+}
+
+button:hover {
+  background: white;
+  color: #ff5b5e;
+  box-shadow: 8px 15px #C24547;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+button:focus {
+  outline: 0;
+  box-shadow: 2px 4px #C24547;
+}
+
+.continue {
+  color: white;
+}
+
+a {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 1.8em;
+}
+
+a:link    { color: white;
+            background-color: transparent;
+            text-decoration: none;}
+a:visited { color: white;
+            background-color: transparent;
+            text-decoration: none;}
+a:hover   { color: white;
+            background-color: transparent;
+            text-decoration: underline;}
+a:active  { color: white;
+            background-color: transparent;
+          text-decoration: none;}
+
+
+
+
+
+
+@media screen and (min-width: 991px) {
+  h1 {
+    margin-top: 15%;
+  }
+}

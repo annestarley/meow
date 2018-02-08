@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="tinder for cats - cat page">
+  <title>meow add a cat</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+  <link rel="stylesheet" href="../CSS/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Open+Sans" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]-->
+  <script src="script.js"></script>
+  <script src="https://use.fontawesome.com/56fb258278.js"></script>
+</head>
+
+<body>
+  <div class="form">
+    <form>
+      <div class="form-row">
+        <h2>Create a new profile</h2>
+        <h3><span id='icon'><i class="fa fa-paw fa-1x white" aria-hidden="true"></i></span> Cat info <span id='icon'><i class="fa fa-paw fa-1.75x white" aria-hidden="true"></i></span></h3>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="catName">Name: </label>
+          <input class="form-control" type="text" placeholder="Enter your cat's name...">
+        </div>
+        <div class="form-group col-md-12">
+          <label for="catGender">Gender: </label>
+          <select class="form-group col-md-12" id="catGender">
+            <option selected>Choose...</option>
+            <option>male</option>
+            <option>female</option>
+            <option>prefer not to say</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="guess">Age: </label>
+          <input type="number" class="form-control" id="catAge" placeholder="Enter your cats age...">
+        </div>
+        <div class="form-group col-md-12">
+          <label for="fixed">Fixed?: </label>
+          <select class="form-group col-md-12" id="fixed">
+            <option selected>Choose...</option>
+            <option>yes</option>
+            <option>nope</option>
+            <option>prefer not to say..</option>
+          </select>
+        </div>
+      </div>
+
+      <div class ="form-row">
+        <div class="form-group col-md-12">
+          <label for="exampleFormControlTextarea1">Cat bio: </label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Optional..."></textarea>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-3">
+          <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
+        </div>
+        <div class="col-xs-3">
+          <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
+        </div>
+        <div class="col-xs-3">
+          <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
+        </div>
+        <div class="col-xs-3">
+          <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <h3><span id='icon'><i class="fa fa-hand-paper fa-1x white" aria-hidden="true"></i></span> Person info <span id='icon'><i class="fa fa-hand-paper fa-1.75x white" aria-hidden="true"></i></span></h3>
+      </div>
+
+
+      <!-- <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect1">Example select</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div> -->
+      <!-- <div class="form-group">
+        <label for="exampleFormControlSelect2">Example multiple select</label>
+        <select multiple class="form-control" id="exampleFormControlSelect2">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div> -->
+    </form>
+  </div>
+
+</body>
+</html>
