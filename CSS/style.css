@@ -14,9 +14,9 @@ html {
 .form {
   margin-right: 10%;
   margin-left:10%;
-  margin-top: 5%;
   width: 80%;
-  background: #FFDAE3;
+  /* background: #FFDAE3; */
+  /* background-image: url(../images/paw-background.png); */
 }
 
 h1 {
@@ -84,7 +84,36 @@ a:active  { color: white;
             background-color: transparent;
           text-decoration: none;}
 
+h2 {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2em;
+  color: dimgray;
+}
 
+h3 {
+  color: dimgray;
+}
+
+.add-a-cat {
+  color: #ff5b5e;
+  font-size: 6em;
+}
+
+.create-cat-profile {
+  font-size: 1.3em;
+  padding: 25px;
+}
+.create-cat-profile:hover {
+  background-color: #ff5b5e;
+  color: white;
+  padding: 30px;
+  box-shadow: none;
+}
+
+label {
+  color: dimgray;
+}
 
 
 
@@ -92,5 +121,11 @@ a:active  { color: white;
 @media screen and (min-width: 991px) {
   h1 {
     margin-top: 15%;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  .add-a-cat {
+    font-size: 7em;
   }
 }

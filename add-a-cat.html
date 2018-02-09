@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style='background-image: none;'>
 <head>
   <meta charset="utf-8">
   <meta name="description" content="tinder for cats - cat page">
@@ -13,106 +13,52 @@
   <![endif]-->
   <script src="script.js"></script>
   <script src="https://use.fontawesome.com/56fb258278.js"></script>
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
+
 </head>
 
 <body>
   <div class="form">
     <form>
       <div class="form-row">
-        <h2>Create a new profile</h2>
+        <h1 class="add-a-cat"><span id='m'>m</span><span id='e'>e</span><span id='o'>o</span><span id='w'>w</span> <span id='icon'><i class="fa fa-paw fa-1.75x white" aria-hidden="true"></i></span></h1>
+        <h2>CREATE A NEW CAT PROFILE</h2>
+        <br>
+        <hr>
 
         <!-- CAT INFO -->
         <h3><span id='icon'><i class="fa fa-paw fa-1x white" aria-hidden="true"></i></span> Cat info <span id='icon'><i class="fa fa-paw fa-1.75x white" aria-hidden="true"></i></span></h3>
       </div>
 
       <div class="form-row">
-        <div class="form-group col-md-12">
+        <div class="form-group col-md-6">
           <label for="catName">Name: </label>
           <input class="form-control" type="text" placeholder="Enter your cat's name...">
         </div>
-        <div class="form-group col-md-12">
-          <label for="catGender">Gender: </label>
-          <select class="form-group col-md-12" id="catGender">
-            <option selected>Choose...</option>
-            <option>male</option>
-            <option>female</option>
-            <option>prefer not to say</option>
-          </select>
+        <div class="form-group col-md-6">
+          <label for="guess">Age: </label>
+          <input type="number" class="form-control" id="catAge" placeholder="Enter your cats age...">
         </div>
       </div>
 
       <div class="form-row">
-        <div class="form-group col-md-12">
-          <label for="guess">Age: </label>
-          <input type="number" class="form-control" id="catAge" placeholder="Enter your cats age...">
+        <div class="form-group col-md-6">
+          <label for="catGender">Gender: </label>
+          <select class="form-group" id="catGender">
+            <option selected>Choose...</option>
+            <option>male</option>
+            <option>female</option>
+            <option>other</option>
+          </select>
         </div>
-        <div class="form-group col-md-12">
+        <div class="form-group col-md-6">
           <label for="fixed">Fixed?: </label>
-          <select class="form-group col-md-12" id="fixed">
+          <select class="form-group" id="fixed">
             <option selected>Choose...</option>
             <option>yes</option>
             <option>nope</option>
             <option>prefer not to say..</option>
           </select>
-        </div>
-      </div>
-
-      <div class ="form-row">
-        <div class="form-group col-md-12">
-          <label for="exampleFormControlTextarea1">Cat bio: </label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Optional..."></textarea>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-12">
-          <h5>Click on the cat box to upload an image of your cat.</h5>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-xs-3">
-          <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
-        </div>
-        <div class="col-xs-3">
-          <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
-        </div>
-        <div class="col-xs-3">
-          <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
-        </div>
-        <div class="col-xs-3">
-          <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
-        </div>
-      </div>
-
-
-      <!-- HUMAN INFO -->
-      <div class="form-row">
-        <h3><span id='icon'><i class="fa fa-hand-paper fa-1x white" aria-hidden="true"></i></span> Person info <span id='icon'><i class="fa fa-hand-paper fa-1.75x white" aria-hidden="true"></i></span></h3>
-      </div>
-
-      <div class="form-row">
-        <div class="form-group col-md-12">
-          <label for="PersonName">Name: </label>
-          <input class="form-control" type="text" placeholder="Enter your own name (first name only)...">
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="form-group col-md-12">
-          <label for="exampleFormControlInput1">Email address: </label>
-          <input type="email" class="form-control" id="email" placeholder="name@example.com">
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="form group col-md-6">
-          <input type="radio" name="email" value="allEmail">
-          <label class="custom-control-label" for="email">Show email to all meow users.</label>
-        </div>
-        <div class="form group col-md-6">
-          <input type="radio" name="email" value="matchEmail">
-          <label class="custom-control-label" for="email">Only show email to meow matches.</label>
         </div>
       </div>
 
@@ -183,18 +129,86 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class ="form-row">
+        <div class="form-group col-md-12">
+          <label for="exampleFormControlTextarea1">Cat bio: </label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Optional..."></textarea>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col-md-12">
+          <h5>Click on the cat box to upload an image of your cat.</h5>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col-xs-3">
+          <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
+        </div>
+        <div class="col-xs-3">
+          <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
+        </div>
+        <div class="col-xs-3">
+          <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
+        </div>
+        <div class="col-xs-3">
+          <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
+        </div>
+      </div>
+      <br>
+      <hr>
+
+      <!-- HUMAN INFO -->
+      <div class="form-row">
+
+
+        <br>
+        <hr>
+        <h3><span id='icon'><i class="fa fa-paw fa-1.75x white" aria-hidden="true"></i></span> Person info <span id='icon'><i class="fas fa-hand-peace fa-1.75x white" aria-hidden="true"></i></span></h3>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="PersonName">Name: </label>
+          <input class="form-control" type="text" placeholder="Enter your own name (first name only will do)...">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group col-md-12">
+          <label for="exampleFormControlInput1">Email address: </label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        </div>
+        <div class="form-check col-xs-offset-2 col-md-offset-1 col-md-5">
+          <input class="form-check-input" type="radio" name="email" value="allEmail">
+          <label class="custom-control-label" for="email">Show email to all meow users.</label>
+        </div>
+        <div class="form-check col-xs-offset-2 col-md-offset-0 col-md-6">
+          <input class="form-check-input" type="radio" name="email" value="matchEmail">
+          <label class="custom-control-label" for="email">Only show email to meow matches.</label>
+        </div>
+      </div>
+
+      <div class="form-row">
         <div class="col-md-12">
           <h5>Click on the person box to upload an image of the cat owner (optional).</h5>
         </div>
       </div>
 
-      <div class="row">
-        <div class="col-xs-3">
+      <div class="form-row">
+        <div>
           <img class="img-responsive" src="./images/simpsons-profile.jpg" height=200 alt="Human default pic" />
         </div>
+        <hr>
+        <br>
       </div>
 
+      <div class="form-row">
+        <div class="col-md-12">
+          <button class="create-cat-profile" type="submit">Create new cat profile!</button>
+        </div>
+      </div>
 
     </form>
   </div>
