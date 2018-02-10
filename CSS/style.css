@@ -14,7 +14,12 @@ html {
 .form {
   margin-right: 10%;
   margin-left:10%;
+  margin-bottom: 10%;
+  margin-top: 10%;
+  padding-left: 10px;
   width: 80%;
+  background: white;
+  border-radius: 25px;
   /* background: #FFDAE3; */
   /* background-image: url(../images/paw-background.png); */
 }
@@ -101,6 +106,7 @@ h3 {
 .add-a-cat {
   color: #ff5b5e;
   font-size: 6em;
+  margin-top: 15px;
 }
 
 .create-cat-profile {
@@ -137,7 +143,7 @@ label {
 .navbar {
   background-color: #c24547;
   border-color: #ff686c;
-  min-height: 70px;
+  /* min-height: 20px; */
 }
 
 nav a {
@@ -167,7 +173,7 @@ nav a:hover {
   font-size: 1em;
 }
 
-.navbar-nav>li>a {
+.navbar-nav>li>a, .navbar-nav>li>a:hover {
     margin-top: 15px;
     margin-bottom: 15px;
 }
@@ -180,6 +186,25 @@ nav a:hover {
     background: #ff686c;
 }
 
+
+/* cat boxes */
+.cats {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  background-image: url(../images/paw-background.png);
+  margin-top: -20px;
+}
+
+.cat-box {
+  width: 90%;
+  margin: auto;
+  background: green;
+}
+
+.cat-boxes {
+  background: white;
+}
 
 
 @media screen and (min-width: 991px) {
