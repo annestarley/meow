@@ -19,7 +19,8 @@ html {
   padding-left: 10px;
   width: 80%;
   background: white;
-  border-radius: 25px;
+  border-radius: 10px;
+  border: 2px solid #c24547;
   /* background: #FFDAE3; */
   /* background-image: url(../images/paw-background.png); */
 }
@@ -99,8 +100,9 @@ h2 {
   color: dimgray;
 }
 
-h3 {
+h3, h4 {
   color: dimgray;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .add-a-cat {
@@ -199,13 +201,54 @@ nav a:hover {
 .cat-box {
   width: 90%;
   margin: auto;
-  background: green;
+  margin-top: 5%;
+    /* display: flex; */
+    display: flex-wrap;
+  justify-content: space-around;
 }
 
 .cat-boxes {
+  display: inline-block;
+  margin: 5px;
   background: white;
+  width: 250px;
+  border-radius: 10px;
+  padding: 15px;
+  border: 2px solid #c24547;
+  height: 338px;
+  overflow: auto;
 }
 
+.cat-boxes p {
+  text-align: left;
+  font-size: .8em;
+}
+
+.cat-boxes img {
+  width: 100%;
+}
+
+#owner img {
+  width: 80px;
+}
+
+.glyphicon {
+    font-size: 30px;
+}
+
+#cross {
+  display: inline-block;
+  margin-right: 60px;
+}
+
+#heart {
+  display: inline-block;
+  margin-left: 60px;
+}
+
+#cross:hover, #heart:hover {
+  color: #c24547;
+}
 
 @media screen and (min-width: 991px) {
   h1 {
