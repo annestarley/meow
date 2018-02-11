@@ -250,6 +250,10 @@ nav a:hover {
   color: #c24547;
 }
 
+.glyphicon:focus {
+  font-size: 50px;
+}
+
 @media screen and (min-width: 991px) {
   h1 {
     margin-top: 15%;
