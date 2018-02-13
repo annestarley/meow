@@ -1,29 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="description" content="tinder for cats">
-  <title>meow</title>
-  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
-  <link rel="stylesheet" href="../CSS/style.css" />
-  <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Open+Sans" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="CSS/login.css" />
+<link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Open+Sans" rel="stylesheet">
 
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-  <![endif]-->
-  <script src="script.js"></script>
-  <script src="https://use.fontawesome.com/56fb258278.js"></script>
+
+<script src="https://use.fontawesome.com/56fb258278.js"></script>
 </head>
-
 <body>
-  <div>
-    <h1><span id='m'>m</span><span id='e'>e</span><span id='o'>o</span><span id='w'>w</span> <span id='icon'><i class="fa fa-paw fa-1.75x white" aria-hidden="true"></i></span></h1>
-    <button onclick="location.href = 'add-a-cat.html';" class='first-button'><p>Add a cat!</p></button>
-    <p class='continue'>Already added all your cats? Continue to <a href="cats.html" class="meow-link">meow's cat page</a> to check out potential cat matches!</p>
-  </div>
 
+<h1><span id='m'>m</span><span id='e'>e</span><span id='o'>o</span><span id='w'>w</span> <span id='icon'><i class="fa fa-paw fa-1.75x white" aria-hidden="true"></i></span></h1>
+
+<button onclick="document.getElementById('id01').style.display='block'" class="first-button"><p style="font-size: 1.7em;">Login!</p></button>
+
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" class="login-button">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember" class="remember-me"> Remember me?
+      </label>
+    </div>
+
+    <!-- <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div> -->
+  </form>
+
+</div>
+
+<p class="continue">Don't have an account yet? Click on the <a href="#" class="meow-link">meow</a> link to create your own and check out potential cat matches!</p>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 
 </body>
 </html>
