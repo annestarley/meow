@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" style='background-image: none;'>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="meow: tinder for cats - create user page">
+  <title>meow: create user</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Open+Sans" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]-->
+  <script defer src="./scripts/create-cat.js"></script>
+  <script src="https://use.fontawesome.com/56fb258278.js"></script>
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
+
+</head>
+
+<body>
+  <div class="cats">
+
+
+    <div class="form">
+      <form>
+        <div class="form-row">
+          <h1 class="add-a-cat"><span id='m'>m</span><span id='e'>e</span><span id='o'>o</span><span id='w'>w</span> <span id='icon'><i class="fa fa-paw fa-1.75x white" aria-hidden="true"></i></span></h1>
+          <h2>CREATE YOUR USER PROFILE</h2>
+          <br>
+          <hr>
+
+          <!-- CAT INFO -->
+          <h3><span id='icon'><i class="fa fa-paw fa-1x white" aria-hidden="true"></i></span> User info <span id='icon'><i class="fa fa-paw fa-1.75x white" aria-hidden="true"></i></span></h3>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="username">Username: </label>
+            <input class="form-control" type="text" placeholder="Please enter a username...">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>AL</option>
+              <option>AK</option>
+              <option>AZ</option>
+              <option>AR</option>
+              <option>CA</option>
+              <option>CO</option>
+              <option>CT</option>
+              <option>DE</option>
+              <option>FL</option>
+              <option>FA</option>
+              <option>HI</option>
+              <option>ID</option>
+              <option>IL</option>
+              <option>IN</option>
+              <option>IA</option>
+              <option>KS</option>
+              <option>KY</option>
+              <option>LA</option>
+              <option>ME</option>
+              <option>MD</option>
+              <option>MA</option>
+              <option>MI</option>
+              <option>MN</option>
+              <option>MS</option>
+              <option>MO</option>
+              <option>MT</option>
+              <option>NE</option>
+              <option>NV</option>
+              <option>NH</option>
+              <option>NJ</option>
+              <option>NM</option>
+              <option>NY</option>
+              <option>NC</option>
+              <option>ND</option>
+              <option>OH</option>
+              <option>OK</option>
+              <option>OR</option>
+              <option>PA</option>
+              <option>RI</option>
+              <option>SC</option>
+              <option>SD</option>
+              <option>TN</option>
+              <option>TX</option>
+              <option>UT</option>
+              <option>VT</option>
+              <option>VA</option>
+              <option>WA</option>
+              <option>WV</option>
+              <option>WI</option>
+              <option>WY</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+        <!-- HUMAN INFO -->
+
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="exampleFormControlInput1">Email address: </label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          </div>
+          <div class="form-check col-xs-offset-1 col-md-offset-1 col-md-5">
+            <input class="form-check-input" type="radio" name="email" value="allEmail">
+            <label class="custom-control-label" for="email">Show email to all meow users.</label>
+          </div>
+          <div class="form-check col-xs-offset-1 col-md-offset-0 col-md-6">
+            <input class="form-check-input" type="radio" name="email" value="matchEmail">
+            <label class="custom-control-label" for="email">Only show email to meow matches.</label>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-md-12">
+            <h5>Click on the box to upload a user profile pic! (optional)</h5>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-md-12">
+            <img class="img-responsive" src="./images/simpsons-profile.jpg" height=200 alt="Human default pic" />
+          </div>
+          <hr>
+          <br>
+        </div>
+
+        <div class="form-row">
+          <div class="col-md-12">
+            <button class="create-cat-profile" type="submit">Create new cat profile!</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+
+  </div>
+</body>
+
+</html>

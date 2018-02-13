@@ -189,7 +189,7 @@ h3, h4 {
   margin-top: 15px;
 }
 
-.create-cat-profile {
+.create-cat-profile, .create-user-profile {
   font-size: 1.3em;
   padding: 25px;
   margin: auto;
@@ -203,7 +203,7 @@ h3, h4 {
   margin-top: 10px;
   margin-bottom: 10%;
 }
-.create-cat-profile:hover {
+.create-cat-profile:hover, .create-user-proflie:hover {
   background-color: #ff5b5e;
   color: white;
   padding: 30px;
@@ -339,7 +339,7 @@ nav a:hover {
   h2 {
     font-size: 2em;
   }
-  .add-a-cat {
+  .add-a-cat, .add-a-user {
     font-size: 7em;
   }
 }
