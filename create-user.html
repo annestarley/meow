@@ -26,29 +26,32 @@
       <form>
         <div class="form-row">
           <h1 class="add-a-cat"><span id='m'>m</span><span id='e'>e</span><span id='o'>o</span><span id='w'>w</span> <span id='icon'><i class="fa fa-paw fa-1.75x white" aria-hidden="true"></i></span></h1>
+        </div>
+        <div class="form-row">
           <h2>CREATE YOUR USER PROFILE</h2>
+        </div>
           <br>
           <hr>
 
-          <!-- CAT INFO -->
+        <div class="form-row">
           <h3><span id='icon'><i class="fa fa-paw fa-1x white" aria-hidden="true"></i></span> User info <span id='icon'><i class="fa fa-paw fa-1.75x white" aria-hidden="true"></i></span></h3>
         </div>
 
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="username">Username: </label>
-            <input class="form-control" type="text" placeholder="Please enter a username...">
+            <input class="form-control" type="text" placeholder="Please enter a username..." required>
           </div>
           <div class="form-group col-md-6">
             <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd">
+            <input type="password" class="form-control" id="pwd" required>
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity">
+            <input type="text" class="form-control" id="inputCity" required>
           </div>
           <div class="form-group col-md-4">
             <label for="inputState">State</label>
@@ -108,7 +111,7 @@
           </div>
           <div class="form-group col-md-2">
             <label for="inputZip">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
+            <input type="text" class="form-control" id="inputZip" required>
           </div>
         </div>
         <!-- HUMAN INFO -->
@@ -116,10 +119,10 @@
         <div class="form-row">
           <div class="form-group col-md-12">
             <label for="exampleFormControlInput1">Email address: </label>
-            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
           </div>
           <div class="form-check col-xs-offset-1 col-md-offset-1 col-md-5">
-            <input class="form-check-input" type="radio" name="email" value="allEmail">
+            <input class="form-check-input" type="radio" name="email" value="allEmail" default>
             <label class="custom-control-label" for="email">Show email to all meow users.</label>
           </div>
           <div class="form-check col-xs-offset-1 col-md-offset-0 col-md-6">
@@ -144,7 +147,7 @@
 
         <div class="form-row">
           <div class="col-md-12">
-            <button class="create-cat-profile" type="submit">Create new cat profile!</button>
+            <button class="create-cat-profile" type="submit">Create your profile!</button>
           </div>
         </div>
 
