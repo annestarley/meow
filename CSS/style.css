@@ -27,17 +27,6 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
-/* Set a style for all buttons */
-/* button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-} */
-
 /* Add a hover effect for buttons */
 button:hover {
     opacity: 0.8;
@@ -133,6 +122,7 @@ p {
   border-radius: 20%;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 10px;
   margin-top: 10px;
   margin-bottom: 10%;
 }
@@ -318,6 +308,17 @@ nav a:hover {
   height: 220px;
 }
 
+.profile-pic {
+  height: 150px;
+  /* width: 150px; */
+  margin: auto;
+  border-radius: 100%;
+  border: 2px solid #c24547;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  float: middle;
+}
+
 .owner-pic {
   width: 80px
 }
@@ -359,6 +360,11 @@ nav a:hover {
   padding: 100px;
 }
 
+.profile {
+  /* display: flex; */
+  margin: auto;
+}
+
 .meow-greeting {
   font-family: 'Gochi Hand', cursive;
   font-size: 1.6em;
@@ -367,6 +373,7 @@ nav a:hover {
 .x-icon {
   margin-bottom: 10px;
 }
+
 @media screen and (min-width: 991px) {
   h1 {
     margin-top: 15%;
