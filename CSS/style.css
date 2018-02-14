@@ -313,12 +313,18 @@ nav a:hover {
   font-size: .8em;
 }
 
-.cat-boxes img {
+.cat-profile-pic {
   width: 100%;
+  height: 220px;
+}
+
+.owner-pic {
+  width: 80px
 }
 
 #owner img {
   width: 80px;
+  height: 80px;
 }
 
 .glyphicon {
@@ -328,6 +334,7 @@ nav a:hover {
 #cross {
   display: inline-block;
   margin-right: 60px;
+  margin-bottom: 10px;
 }
 
 #heart {
@@ -357,6 +364,9 @@ nav a:hover {
   font-size: 1.6em;
 }
 
+.x-icon {
+  margin-bottom: 10px;
+}
 @media screen and (min-width: 991px) {
   h1 {
     margin-top: 15%;
