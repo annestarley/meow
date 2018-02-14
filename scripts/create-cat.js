@@ -22,5 +22,6 @@ createCatForm.addEventListener('submit', (event) => {
   axios.post(`${baseURL}/users/${userId}/cats`, {name, age, gender, fixed, bio, image1, image2, image3, image4, userId})
     .then(result => {
       console.log(result);
+      window.location.href ="success.html"
     })
 })

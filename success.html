@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" style='background-image: none;'>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="meow: tinder for cats - create user page">
+  <title>meow: create user</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+  <link rel="stylesheet" href="CSS/style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Open+Sans" rel="stylesheet">
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <![endif]-->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- <script defer src="scripts/user.js"></script> -->
+  <script src="https://use.fontawesome.com/56fb258278.js"></script>
+  <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
+
+</head>
+
+<body>
+
+  <!-- navbar -->
+
+    <nav class="navbar navbar-toggleable-md">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="index.html"><span id='m'>m</span><span id='e'>e</span><span id='o'>o</span><span id='w'>w</span> <span id='icon'><i class="fa fa-paw fa-1.75x white" aria-hidden="true"></i></span></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="cats.html">Cats</a></li>
+          <li class="active"><a href="user.html">Your Profile</a></li>
+          <li><a href="user-cats.html">Your Cats</a></li>
+          <li><a href="add-a-cat.html">Create Cat</a></li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="cats">
+      <div id="greeting">
+        <!-- <h2>Hello Anne!</h2> -->
+        <h2>Success! Your cat was added.</h2>
+      </div>
+
+      <!-- <div class="cat-boxes">
+
+      </div> -->
+
+      <button class="first-button" onclick="location.href = 'add-a-cat.html';"><p>Add another cat?</p></button>
+      <p class="continue">Already added all your cats? Continue to <a href="cats.html" class="meow-link">meow</a> and check out potential cat matches!</p>
+
+    </div>
+
+</body>
+</html>
