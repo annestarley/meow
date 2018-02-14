@@ -6,6 +6,7 @@ let createUserButton = document.querySelector('#create-user-profile')
 createUserButton.addEventListener('submit', (event) => {
   event.preventDefault()
 
+  console.log('hi');
   let name = document.querySelector('#username').value
   let password = document.querySelector('#password').value
   let city = document.querySelector('#city').value
@@ -20,11 +21,7 @@ createUserButton.addEventListener('submit', (event) => {
   }
   let image = document.querySelector('#image').value
 
-  // console.log(name, password, email, hidden, image, city, state, zip);
-
-  // function redirect(){
-  //    window.location.href = "user.html" ;
-  // }
+  console.log(name, password, email, hidden, image, city, state, zip);
 
   // LOCAL STORAGE
   localStorage.setItem('username', name)
@@ -33,7 +30,6 @@ createUserButton.addEventListener('submit', (event) => {
   axios.post(`${baseURL}/users/`, {name, password, email, hidden, image, city, state, zip})
     .then(result => {
       console.log(result)
+      window.location.href = "user.html";
     })
-
-    window.location.href = "user.html";
 })
