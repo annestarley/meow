@@ -12,7 +12,8 @@
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <![endif]-->
-  <script defer src="./scripts/create-cat.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script defer src="scripts/index.js"></script>
   <script src="https://use.fontawesome.com/56fb258278.js"></script>
   <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
 
@@ -22,7 +23,7 @@
   <div class="cats">
 
 
-    <div class="form">
+    <div class="form" id="create-user-profile">
       <form>
         <div class="form-row">
           <h1 class="add-a-cat"><span id='m'>m</span><span id='e'>e</span><span id='o'>o</span><span id='w'>w</span> <span id='icon'><i class="fa fa-paw fa-1.75x white" aria-hidden="true"></i></span></h1>
@@ -40,22 +41,22 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="username">Username: </label>
-            <input class="form-control" type="text" placeholder="Please enter a username..." required>
+            <input id="username" class="form-control" type="text" placeholder="Please enter a username..." required>
           </div>
           <div class="form-group col-md-6">
-            <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd" required>
+            <label for="pwd">Password: </label>
+            <input type="password" class="form-control" id="password" required>
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity" required>
+            <input type="text" class="form-control" id="city" required>
           </div>
           <div class="form-group col-md-4">
             <label for="inputState">State</label>
-            <select id="inputState" class="form-control">
+            <select class="form-control" id="state">
               <option selected>Choose...</option>
               <option>AL</option>
               <option>AK</option>
@@ -111,7 +112,7 @@
           </div>
           <div class="form-group col-md-2">
             <label for="inputZip">Zip</label>
-            <input type="text" class="form-control" id="inputZip" required>
+            <input type="text" class="form-control" id="zip" required>
           </div>
         </div>
         <!-- HUMAN INFO -->
@@ -122,18 +123,18 @@
             <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
           </div>
           <div class="form-check col-xs-offset-1 col-md-offset-1 col-md-5">
-            <input class="form-check-input" type="radio" name="email" value="allEmail" default>
+            <input class="form-check-input" type="radio" name="email" value="allEmail" default id="all">
             <label class="custom-control-label" for="email">Show email to all meow users.</label>
           </div>
           <div class="form-check col-xs-offset-1 col-md-offset-0 col-md-6">
-            <input class="form-check-input" type="radio" name="email" value="matchEmail">
+            <input class="form-check-input" type="radio" name="email" value="matchEmail" id="match">
             <label class="custom-control-label" for="email">Only show email to meow matches.</label>
           </div>
         </div>
 
         <div class="form-row">
           <div class="col-md-12">
-            <h5>Click on the box to upload a user profile pic! (optional)</h5>
+            <h5>Enter url for profile pic! (optional)</h5>
           </div>
         </div>
 
@@ -143,6 +144,13 @@
           </div>
           <hr>
           <br>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="url">URL: </label>
+            <input id="image" class="form-control" type="text" placeholder="Image url...." required>
+          </div>
         </div>
 
         <div class="form-row">
