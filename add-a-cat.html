@@ -12,6 +12,7 @@
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   <![endif]-->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script defer src="./scripts/create-cat.js"></script>
   <script src="https://use.fontawesome.com/56fb258278.js"></script>
   <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
@@ -39,8 +40,7 @@
 
   <div class="form-container">
 
-    <form>
-      <div class="form">
+    <form id="create-cat">
 
         <div class="form-row">
           <h1 class="add-a-cat"><span id='m'>m</span><span id='e'>e</span><span id='o'>o</span><span id='w'>w</span> <span id='icon'><i class="fa fa-paw fa-1.75x white" aria-hidden="true"></i></span></h1>
@@ -55,18 +55,18 @@
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="catName">Name: </label>
-            <input class="form-control" type="text" placeholder="Enter your cat's name..." required>
+            <input id="cat-name" class="form-control" type="text" placeholder="Enter your cat's name..." required>
           </div>
           <div class="form-group col-md-6">
             <label for="guess">Age: </label>
-            <input type="number" class="form-control" id="catAge" placeholder="Enter your cats age...">
+            <input type="number" class="form-control" id="cat-age" placeholder="Enter your cats age...">
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="catGender">Gender: </label>
-            <select class="form-group" id="catGender">
+            <select class="form-group" id="cat-gender">
             <option selected>Choose...</option>
             <option>male</option>
             <option>female</option>
@@ -87,13 +87,13 @@
         <div class="form-row">
           <div class="form-group col-md-12">
             <label for="exampleFormControlTextarea1">Cat bio: </label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Optional..."></textarea>
+            <textarea class="form-control" id="cat-bio" rows="3" placeholder="Optional..."></textarea>
           </div>
         </div>
 
         <div class="form-row">
           <div class="col-md-12">
-            <h5>Click on the cat box to upload an image of your cat.</h5>
+            <h5>Enter URL to upload up to 4 images of your cat.</h5>
           </div>
         </div>
 
@@ -109,6 +109,25 @@
           </div>
           <div class="col-xs-3">
             <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-xs-3">
+            <label for="url">URL: </label>
+            <input id="image1" class="form-control" type="text" placeholder="Image url...." required value="image.png">
+          </div>
+          <div class="col-xs-3">
+            <label for="url">URL: </label>
+            <input id="image2" class="form-control" type="text" placeholder="Image url...." required value="image.png">
+          </div>
+          <div class="col-xs-3">
+            <label for="url">URL: </label>
+            <input id="image3" class="form-control" type="text" placeholder="Image url...." required value="image.png">
+          </div>
+          <div class="col-xs-3">
+            <label for="url">URL: </label>
+            <input id="image4" class="form-control" type="text" placeholder="Image url...." required value="image.png">
           </div>
         </div>
         <br>
@@ -119,7 +138,6 @@
             <button class="create-cat-profile" type="submit">Create new cat profile!</button>
           </div>
         </div>
-      </div>
     </form>
 
 
