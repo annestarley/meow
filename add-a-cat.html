@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" style='background-image: none;'>
+
 <head>
   <meta charset="utf-8">
   <meta name="description" content="tinder for cats - cat page">
@@ -19,7 +20,7 @@
 
 <body>
 
-<!-- navbar -->
+  <!-- navbar -->
 
   <nav class="navbar navbar-toggleable-md">
     <div class="container">
@@ -36,94 +37,95 @@
   </nav>
 
 
-<div class="cats">
+  <div class="form-container">
 
-
-  <div class="form">
     <form>
-      <div class="form-row">
-        <h1 class="add-a-cat"><span id='m'>m</span><span id='e'>e</span><span id='o'>o</span><span id='w'>w</span> <span id='icon'><i class="fa fa-paw fa-1.75x white" aria-hidden="true"></i></span></h1>
-        <h2>CREATE A NEW CAT PROFILE</h2>
-        <br>
-        <hr>
+      <div class="form">
 
-        <!-- CAT INFO -->
-        <h3><span id='icon'><i class="fa fa-paw fa-1x white" aria-hidden="true"></i></span> Cat info <span id='icon'><i class="fa fa-paw fa-1.75x white" aria-hidden="true"></i></span></h3>
-      </div>
+        <div class="form-row">
+          <h1 class="add-a-cat"><span id='m'>m</span><span id='e'>e</span><span id='o'>o</span><span id='w'>w</span> <span id='icon'><i class="fa fa-paw fa-1.75x white" aria-hidden="true"></i></span></h1>
+          <h2>CREATE A NEW CAT PROFILE</h2>
+          <br>
+          <hr>
 
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="catName">Name: </label>
-          <input class="form-control" type="text" placeholder="Enter your cat's name..." required>
+          <!-- CAT INFO -->
+          <h3><span id='icon'><i class="fa fa-paw fa-1x white" aria-hidden="true"></i></span> Cat info <span id='icon'><i class="fa fa-paw fa-1.75x white" aria-hidden="true"></i></span></h3>
         </div>
-        <div class="form-group col-md-6">
-          <label for="guess">Age: </label>
-          <input type="number" class="form-control" id="catAge" placeholder="Enter your cats age...">
-        </div>
-      </div>
 
-      <div class="form-row">
-        <div class="form-group col-md-6">
-          <label for="catGender">Gender: </label>
-          <select class="form-group" id="catGender">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="catName">Name: </label>
+            <input class="form-control" type="text" placeholder="Enter your cat's name..." required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="guess">Age: </label>
+            <input type="number" class="form-control" id="catAge" placeholder="Enter your cats age...">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="catGender">Gender: </label>
+            <select class="form-group" id="catGender">
             <option selected>Choose...</option>
             <option>male</option>
             <option>female</option>
             <option>other</option>
           </select>
-        </div>
-        <div class="form-group col-md-6">
-          <label for="fixed">Fixed?: </label>
-          <select class="form-group" id="fixed">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="fixed">Fixed?: </label>
+            <select class="form-group" id="fixed">
             <option selected>Choose...</option>
             <option>yes</option>
             <option>nope</option>
             <option>prefer not to say..</option>
           </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="exampleFormControlTextarea1">Cat bio: </label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Optional..."></textarea>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-md-12">
+            <h5>Click on the cat box to upload an image of your cat.</h5>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-xs-3">
+            <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
+          </div>
+          <div class="col-xs-3">
+            <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
+          </div>
+          <div class="col-xs-3">
+            <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
+          </div>
+          <div class="col-xs-3">
+            <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
+          </div>
+        </div>
+        <br>
+        <hr>
+
+        <div class="form-row">
+          <div class="col-md-12">
+            <button class="create-cat-profile" type="submit">Create new cat profile!</button>
+          </div>
         </div>
       </div>
-
-      <div class ="form-row">
-        <div class="form-group col-md-12">
-          <label for="exampleFormControlTextarea1">Cat bio: </label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Optional..."></textarea>
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="col-md-12">
-          <h5>Click on the cat box to upload an image of your cat.</h5>
-        </div>
-      </div>
-
-      <div class="form-row">
-        <div class="col-xs-3">
-          <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
-        </div>
-        <div class="col-xs-3">
-          <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
-        </div>
-        <div class="col-xs-3">
-          <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
-        </div>
-        <div class="col-xs-3">
-          <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
-        </div>
-      </div>
-      <br>
-      <hr>
-
-      <div class="form-row">
-        <div class="col-md-12">
-          <button class="create-cat-profile" type="submit">Create new cat profile!</button>
-        </div>
-      </div>
-
     </form>
-  </div>
+
 
 
   </div>
 
 </body>
+
 </html>

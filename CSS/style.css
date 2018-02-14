@@ -13,9 +13,9 @@ html {
 
 
 /* Bordered form */
-form {
-    border: 3px solid #f1f1f1;
-}
+/* form {
+    border: 3px solid #c24547;
+} */
 
 /* Full-width inputs */
 input[type=text], input[type=password] {
@@ -89,7 +89,7 @@ span.psw {
 
 
 
-.form {
+form {
   margin-right: 10%;
   margin-left:10%;
   margin-bottom: 10%;
@@ -270,10 +270,20 @@ nav a:hover {
 
 /* cat boxes */
 .cats {
+  display: flex-wrap;
+  width: 100%;
+  margin: auto;
+  background-image: url(../images/paw-background.png);
+  margin-top: -20px;
+  padding: 50px;
+}
+
+.form-container {
   display: flex;
   width: 100%;
   margin: auto;
   background-image: url(../images/paw-background.png);
+  padding: 40px;
   margin-top: -20px;
 }
 
@@ -335,7 +345,11 @@ nav a:hover {
 
 #greeting h2 {
   color: white;
-  text-align: center;
+}
+
+#greeting {
+  width: 100%;
+  padding: 100px;
 }
 
 .meow-greeting {

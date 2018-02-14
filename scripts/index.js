@@ -35,5 +35,5 @@ createUserButton.addEventListener('submit', (event) => {
       console.log(result)
     })
 
-    window.location.href = "user.html" ;
+    window.location.href = "user.html";
 })
