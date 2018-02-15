@@ -1,10 +1,8 @@
 const baseURL = 'http://localhost:3000'
 let userId = localStorage.getItem('id')
-console.log(userId);
 
 axios.get(`${baseURL}/users/${userId}/cats`)
   .then(catsResults => {
-    console.log(catsResults.data[0]);
 
     axios.get(`${baseURL}/users`)
       .then(userResults => {
@@ -17,7 +15,6 @@ axios.get(`${baseURL}/users/${userId}/cats`)
 
           userResults.data.forEach(user => {
             if (user.id == cat.userid) {
-              console.log(user)
               h5.innerText = `${user.city}, ${user.state}`
               ownerName.innerText = `${user.username}`
               ownerPic.classList.add('owner-pic')
@@ -28,14 +25,7 @@ axios.get(`${baseURL}/users/${userId}/cats`)
 
           let catBoxes = document.createElement('div')
           catBoxes.classList.add('cat-boxes')
-          let crossSpan = document.createElement('span')
-          crossSpan.classList.add('glyphicon')
-          crossSpan.classList.add('glyphicon-remove')
-          crossSpan.setAttribute('id', 'cross')
-          let heartSpan = document.createElement('span')
-          heartSpan.classList.add('glyphicon')
-          heartSpan.classList.add('glyphicon-heart-empty')
-          heartSpan.setAttribute('id', 'heart')
+          catBoxes.style.height = '300px'
           let catImage1 = document.createElement('img')
           catImage1.classList.add('cat-profile-pic')
           catImage1.setAttribute('src', cat.image1)
@@ -48,22 +38,38 @@ axios.get(`${baseURL}/users/${userId}/cats`)
           gender.innerText = `gender: ${cat.gender}`
           let bio = document.createElement('p')
           bio.innerText = `bio: ${cat.bio}`
+          let catId = document.createElement('p')
+          catId.innerText = `${cat.id}`
+          catId.style.display = 'none'
+          let deleteButton = document.createElement('button')
+          deleteButton.innerText = 'Delete?'
+          deleteButton.classList.add('delete-button')
 
-          catBoxes.appendChild(crossSpan)
-          catBoxes.appendChild(heartSpan)
           catBoxes.appendChild(catImage1)
           catBoxes.appendChild(h4)
           catBoxes.appendChild(h5)
           catBoxes.appendChild(age)
           catBoxes.appendChild(gender)
           catBoxes.appendChild(bio)
+          catBoxes.appendChild(catId)
           catBoxes.appendChild(ownerName)
           catBoxes.appendChild(ownerPic)
+          catBoxes.appendChild(deleteButton)
 
           let catBox = document.querySelector('.cat-box')
           catBox.appendChild(catBoxes)
-          console.log(catBoxes);
-      })
 
+
+          deleteButton.addEventListener('click', () => {
+            if (confirm(`Delete ${cat.name}?`)) {
+
+              let id = cat.id
+              axios.delete(`${baseURL}/users/${userId}/cats/${id}`)
+              .then(results => {
+                location.reload()
+              })
+            }
+          })
       })
+    })
   })
