@@ -35,6 +35,15 @@ b {
   color: white;
 }
 
+.remember-me {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h4 {
+  font-family: 'Open Sans', sans-serif;
+  color: #ff444f;
+}
+
 button:hover {
     opacity: 0.8;
 }
