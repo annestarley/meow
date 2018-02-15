@@ -5,7 +5,9 @@
 <link rel="stylesheet" href="CSS/login.css" />
 <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Open+Sans" rel="stylesheet">
 
-<script src="scripts/login.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="scripts/login.js" defer></script>
+<script src="scripts/index.js" defer></script>
 <script src="https://use.fontawesome.com/56fb258278.js"></script>
 </head>
 <body>
@@ -16,15 +18,15 @@
 
 <div id="id01" class="modal">
 
-  <form class="modal-content animate" action="/action_page.php">
+  <form class="modal-content animate" id='login-form'>
     <div class="container">
       <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <input id="username-login" type="text" placeholder="Enter Username" name="uname" required>
 
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input id="password-login" type="password" placeholder="Enter Password" name="psw" required>
 
-      <button type="submit" class="login-button">Login</button>
+      <button id="login-submit" type="submit" class="login-button">Login</button>
       <label>
         <input type="checkbox" checked="checked" name="remember" class="remember-me"> Remember me?
       </label>

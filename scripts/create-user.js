@@ -27,7 +27,7 @@ createUserButton.addEventListener('submit', (event) => {
 
   // LOCAL STORAGE
   localStorage.setItem('username', name)
-  localStorage.setItem('password', password)
+  // localStorage.setItem('password', password)
 
   axios.post(`${baseURL}/users/`, {name, password, email, hidden, image, city, state, zip})
     .then(result => {
