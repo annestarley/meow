@@ -1,3 +1,5 @@
+localStorage.clear()
+
 const baseURL = 'http://localhost:3000'
 let userID
 let loginForm = document.querySelector('#login-form')

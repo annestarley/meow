@@ -77,7 +77,6 @@ axios.get(`${baseURL}/cats`)
           const favorites = JSON.parse(localStorage.getItem('localFavorites')) || {}
 
           heartSpan.addEventListener('click', () => {
-            // heartSpan.style.color = 'firebrick'
             if (heartSpan.style.color === 'firebrick') {
               heartSpan.style.color = 'black'
             } else {
