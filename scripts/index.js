@@ -1,6 +1,8 @@
 // localStorage.clear()
 
-const baseURL = 'http://localhost:3000'
+//const baseURL = 'http://localhost:3000'
+const baseURL = 'https://meow-annestarley.herokuapp.com'
+
 let userID
 let loginForm = document.querySelector('#login-form')
 let warning = document.querySelector('.warning')

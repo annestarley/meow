@@ -1,4 +1,6 @@
-const baseURL = 'http://localhost:3000'
+// const baseURL = 'http://localhost:3000'
+const baseURL = 'https://meow-annestarley.herokuapp.com'
+
 let userId = localStorage.getItem('id')
 
 axios.get(`${baseURL}/users/${userId}/cats`)
