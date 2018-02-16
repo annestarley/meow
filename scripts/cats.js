@@ -13,6 +13,8 @@ axios.get(`${baseURL}/cats`)
           let h5 = document.createElement('h5')
           let ownerName = document.createElement('h5')
           let ownerPic = document.createElement('img')
+          let email = document.createElement('p')
+          let hidden;
 
           userResults.data.forEach(user => {
             if (user.id == cat.userid) {
@@ -22,6 +24,9 @@ axios.get(`${baseURL}/cats`)
               ownerPic.classList.add('owner-pic')
               ownerPic.setAttribute('src', `${user.image}`)
               ownerPic.setAttribute('alt', `${user.username}`)
+              email.innerText = `email: ${user.email}`
+              email.classList.add('email')
+              hidden = user.hidden
             }
           })
 
@@ -58,6 +63,7 @@ axios.get(`${baseURL}/cats`)
           catBoxes.appendChild(bio)
           catBoxes.appendChild(ownerName)
           catBoxes.appendChild(ownerPic)
+          if (!hidden) catBoxes.appendChild(email)
 
           let catBox = document.querySelector('.cat-box')
           catBox.appendChild(catBoxes)
