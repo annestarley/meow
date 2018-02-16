@@ -14,7 +14,7 @@ axios.get(`${baseURL}/cats`)
           let ownerName = document.createElement('h5')
           let ownerPic = document.createElement('img')
           let email = document.createElement('p')
-          let hidden;
+          let hidden
 
           userResults.data.forEach(user => {
             if (user.id == cat.userid) {
@@ -30,8 +30,10 @@ axios.get(`${baseURL}/cats`)
             }
           })
 
+          let id = cat.id
           let catBoxes = document.createElement('div')
           catBoxes.classList.add('cat-boxes')
+          catBoxes.setAttribute('id', id)
           let crossSpan = document.createElement('span')
           crossSpan.classList.add('glyphicon')
           crossSpan.classList.add('glyphicon-remove')
@@ -68,6 +70,35 @@ axios.get(`${baseURL}/cats`)
           let catBox = document.querySelector('.cat-box')
           catBox.appendChild(catBoxes)
           console.log(catBoxes);
+
+
+
+          //FAVORITES
+          const favorites = JSON.parse(localStorage.getItem('localFavorites')) || {}
+
+          heartSpan.addEventListener('click', () => {
+            // heartSpan.style.color = 'firebrick'
+            if (heartSpan.style.color === 'firebrick') {
+              heartSpan.style.color = 'black'
+            } else {
+              heartSpan.style.color = 'firebrick'
+              if (crossSpan.style.color === 'firebrick') {
+                crossSpan.style.color = 'black'
+              }
+            }
+
+            crossSpan.addEventListener('click', () => {
+              if (crossSpan.style.color === 'firebrick') {
+                crossSpan.style.color = 'black'
+              } else {
+                crossSpan.style.color = 'firebrick'
+                if (heartSpan.style.color === 'firebrick') {
+                  heartSpan.style.color = 'black'
+                }
+              }
+            })
+
+          })
       })
     })
   })
