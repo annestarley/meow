@@ -16,8 +16,8 @@ This project uses the following:
   * DOM Manipulation
   * Event Handlers
   * Client Side Validation
-  * Local Storage
-  
-  Deployed site found at: http://meow-cat-tinder.surge.sh/ 
+  * Local Storage . 
+
+Deployed site found at: http://meow-cat-tinder.surge.sh/ 
   
   
