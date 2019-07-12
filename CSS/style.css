@@ -376,14 +376,25 @@ nav a:hover {
   bottom: 0;
 }
 
-@media screen and (min-width: 991px) {
-  h1 {
-    margin-top: 15%;
+/* @media screen and (max-width: 820px) {
+  .cat-boxes {
+    margin: 10px;
   }
-  h2 {
-    font-size: 2em;
+} */
+
+@media screen and (max-width: 645px) {
+  .cat-boxes {
+    display: block;
+    margin: auto;
   }
-  .add-a-cat, .add-a-user {
-    font-size: 7em;
+
+  .cat-box {
+    margin-top: 250px;
+    width: 100%;
+    padding: 5%;
+  }
+
+  .cats {
+    padding: 0;
   }
 }
