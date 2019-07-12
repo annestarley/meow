@@ -5,17 +5,12 @@
 html {
   /* background-color: #ff5b5e; */
   background-image: url(../images/paw-background.png);
+  background-repeat: repeat;
 }
 
 .main {
   margin: auto;
 }
-
-
-/* Bordered form */
-/* form {
-    border: 3px solid #c24547;
-} */
 
 /* Full-width inputs */
 input[type=text], input[type=password] {
@@ -73,24 +68,12 @@ span.psw {
     }
 }
 
-
-
-
-
-
 form {
-  margin-right: 10%;
-  margin-left:10%;
-  margin-bottom: 10%;
-  margin-top: 10%;
-  padding-left: 10px;
+  margin: 10%;
   width: 80%;
   background: white;
   border-radius: 10px;
   border: 2px solid #c24547;
-  /* background: #FFDAE3; */
-  /* background-image: url(../images/paw-background.png); */
-  /* display: none; */
 }
 
 h1 {
@@ -217,7 +200,7 @@ label {
 .navbar {
   background-color: #c24547;
   border-color: #ff686c;
-  /* min-height: 20px; */
+  z-index: 100;
 }
 
 nav a {
@@ -247,11 +230,6 @@ nav a:hover {
   font-size: 1em;
 }
 
-.navbar-nav>li>a, .navbar-nav>li>a:hover {
-    /* margin-top: 15px;
-    margin-bottom: 15px; */
-}
-
 .active {
   background-color: #ff686c;
 }
@@ -260,15 +238,15 @@ nav a:hover {
     background: #ff686c;
 }
 
-
 /* cat boxes */
 .cats {
-  display: wrap;
   width: 100%;
   margin: auto;
   background-image: url(../images/paw-background.png);
-  margin-top: -20px;
   padding: 50px;
+  position: absolute;
+  bottom: 0;
+  height: 100%;
 }
 
 .form-container {
@@ -284,8 +262,7 @@ nav a:hover {
   width: 90%;
   margin: auto;
   margin-top: 5%;
-    /* display: flex; */
-    display: flex-wrap;
+  display: flex-wrap;
   justify-content: space-around;
 }
 
@@ -313,7 +290,6 @@ nav a:hover {
 
 .profile-pic {
   height: 150px;
-  /* width: 150px; */
   margin: auto;
   border-radius: 100%;
   border: 2px solid #c24547;
@@ -379,7 +355,6 @@ nav a:hover {
 }
 
 .profile {
-  /* display: flex; */
   margin: auto;
 }
 
@@ -390,6 +365,14 @@ nav a:hover {
 
 .x-icon {
   margin-bottom: 10px;
+}
+
+.background {
+  background-image: url(../images/paw-background.png);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 @media screen and (min-width: 991px) {

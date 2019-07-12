@@ -37,112 +37,111 @@
     </div>
   </nav>
 
+  <div class="background">
+    <div class="form-container">
 
-  <div class="form-container">
-
-    <form id="create-cat">
-
-        <div class="form-row">
-          <h1 class="add-a-cat"><span id='m'>m</span><span id='e'>e</span><span id='o'>o</span><span id='w'>w</span> <span id='icon'><i class="fa fa-paw fa-1.75x white" aria-hidden="true"></i></span></h1>
-          <h2>CREATE A NEW CAT PROFILE</h2>
+      <form id="create-cat">
+  
+          <div class="form-row">
+            <h1 class="add-a-cat"><span id='m'>m</span><span id='e'>e</span><span id='o'>o</span><span id='w'>w</span> <span id='icon'><i class="fa fa-paw fa-1.75x white" aria-hidden="true"></i></span></h1>
+            <h2>CREATE A NEW CAT PROFILE</h2>
+            <br>
+            <hr>
+  
+            <!-- CAT INFO -->
+            <h3><span id='icon'><i class="fa fa-paw fa-1x white" aria-hidden="true"></i></span> Cat info <span id='icon'><i class="fa fa-paw fa-1.75x white" aria-hidden="true"></i></span></h3>
+          </div>
+  
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="catName">Name: </label>
+              <input id="cat-name" class="form-control" type="text" placeholder="Enter your cat's name..." required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="guess">Age: </label>
+              <input type="number" class="form-control" id="cat-age" placeholder="Enter your cats age...">
+            </div>
+          </div>
+  
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="catGender">Gender: </label>
+              <select class="form-group" id="cat-gender">
+              <option selected>Choose...</option>
+              <option>male</option>
+              <option>female</option>
+              <option>other</option>
+            </select>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="fixed">Fixed?: </label>
+              <select class="form-group" id="fixed">
+              <option selected>Choose...</option>
+              <option>yes</option>
+              <option>nope</option>
+              <option>prefer not to say..</option>
+            </select>
+            </div>
+          </div>
+  
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="exampleFormControlTextarea1">Cat bio: </label>
+              <textarea class="form-control" id="cat-bio" rows="3" placeholder="Optional..."></textarea>
+            </div>
+          </div>
+  
+          <div class="form-row">
+            <div class="col-md-12">
+              <h5>Enter URL to upload up to 4 images of your cat.</h5>
+            </div>
+          </div>
+  
+          <div class="form-row">
+            <div class="col-xs-3">
+              <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
+            </div>
+            <div class="col-xs-3">
+              <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
+            </div>
+            <div class="col-xs-3">
+              <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
+            </div>
+            <div class="col-xs-3">
+              <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
+            </div>
+          </div>
+  
+          <div class="form-row">
+            <div class="col-xs-3">
+              <label for="url">URL: </label>
+              <input id="image1" class="form-control" type="text" placeholder="Image url...." required>
+            </div>
+            <div class="col-xs-3">
+              <label for="url">URL: </label>
+              <input id="image2" class="form-control" type="text" placeholder="Image url...." required value="image.png">
+            </div>
+            <div class="col-xs-3">
+              <label for="url">URL: </label>
+              <input id="image3" class="form-control" type="text" placeholder="Image url...." required value="image.png">
+            </div>
+            <div class="col-xs-3">
+              <label for="url">URL: </label>
+              <input id="image4" class="form-control" type="text" placeholder="Image url...." required value="image.png">
+            </div>
+          </div>
           <br>
           <hr>
-
-          <!-- CAT INFO -->
-          <h3><span id='icon'><i class="fa fa-paw fa-1x white" aria-hidden="true"></i></span> Cat info <span id='icon'><i class="fa fa-paw fa-1.75x white" aria-hidden="true"></i></span></h3>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="catName">Name: </label>
-            <input id="cat-name" class="form-control" type="text" placeholder="Enter your cat's name..." required>
+  
+          <div class="form-row">
+            <div class="col-md-12">
+              <button class="create-cat-profile" type="submit">Create new cat profile!</button>
+            </div>
           </div>
-          <div class="form-group col-md-6">
-            <label for="guess">Age: </label>
-            <input type="number" class="form-control" id="cat-age" placeholder="Enter your cats age...">
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="catGender">Gender: </label>
-            <select class="form-group" id="cat-gender">
-            <option selected>Choose...</option>
-            <option>male</option>
-            <option>female</option>
-            <option>other</option>
-          </select>
-          </div>
-          <div class="form-group col-md-6">
-            <label for="fixed">Fixed?: </label>
-            <select class="form-group" id="fixed">
-            <option selected>Choose...</option>
-            <option>yes</option>
-            <option>nope</option>
-            <option>prefer not to say..</option>
-          </select>
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="form-group col-md-12">
-            <label for="exampleFormControlTextarea1">Cat bio: </label>
-            <textarea class="form-control" id="cat-bio" rows="3" placeholder="Optional..."></textarea>
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="col-md-12">
-            <h5>Enter URL to upload up to 4 images of your cat.</h5>
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="col-xs-3">
-            <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
-          </div>
-          <div class="col-xs-3">
-            <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
-          </div>
-          <div class="col-xs-3">
-            <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
-          </div>
-          <div class="col-xs-3">
-            <img class="img-responsive" src="./images/cat-outline-2.png" height=200 alt="Cat default pic" />
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="col-xs-3">
-            <label for="url">URL: </label>
-            <input id="image1" class="form-control" type="text" placeholder="Image url...." required>
-          </div>
-          <div class="col-xs-3">
-            <label for="url">URL: </label>
-            <input id="image2" class="form-control" type="text" placeholder="Image url...." required value="image.png">
-          </div>
-          <div class="col-xs-3">
-            <label for="url">URL: </label>
-            <input id="image3" class="form-control" type="text" placeholder="Image url...." required value="image.png">
-          </div>
-          <div class="col-xs-3">
-            <label for="url">URL: </label>
-            <input id="image4" class="form-control" type="text" placeholder="Image url...." required value="image.png">
-          </div>
-        </div>
-        <br>
-        <hr>
-
-        <div class="form-row">
-          <div class="col-md-12">
-            <button class="create-cat-profile" type="submit">Create new cat profile!</button>
-          </div>
-        </div>
-    </form>
-
-
-
+      </form>
+    </div>
   </div>
+  
 
 </body>
 
